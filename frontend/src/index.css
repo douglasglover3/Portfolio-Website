@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h3 {
+  font-weight: normal;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.dark {
+  background-color: rgb(63, 44, 156);
+  color: white;
+}
+
+.regular {
+  background-color: rgb(54, 44, 196);
+  color: white;
+}
+
+.light {
+  background-color: rgb(218, 212, 255);
+  color: black;
+}
+
+.offwhite {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.white {
+  background-color: white;
+  color: black;
+}
+
+.borderless {
+  border: 0;
+}
+
+.lowershadow {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.sidebarbutton {
+  min-width: 200px;
+  background-color: white;
+  border: 0;
+  text-align: start;
+  margin-right: 50px;
+}
+.sidebarbutton:hover {
+  background-color: whitesmoke;
+}
+
+.closesidebarbutton {
+  min-width: 60px;
+  min-height: 60px;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 0;
+  border: 0;
+  text-align: center;
+  position: fixed;
+  top: 60px;
+}
+.closesidebarbutton:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
