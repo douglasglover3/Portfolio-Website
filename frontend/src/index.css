@@ -1,14 +1,45 @@
+html {
+  background-color: rgb(253, 251, 255);
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --color-background: rgb(253, 251, 255);
+  --color-text: rgb(47, 0, 158);
+  --color-foreground: #0f0e11;
+}
+
+h1 {
+  font-size: 40pt;
+  margin: 0;
+  margin-inline: 0;
+}
+
+h2 {
+  font-weight: normal;
+  margin-block: 15px;
+  margin-inline: 0;
 }
 
 h3 {
   font-weight: normal;
+  color: var(--color-text);
+  margin-block: 15px;
+  margin-inline: 0;
+}
+
+h4 {
+  color: var(--color-text);
+  margin: 0;
+}
+
+p {
+  font-size: 12pt;
+  margin-block: 5px;
+  margin-inline: 0;
 }
 
 code {
@@ -18,31 +49,21 @@ code {
 
 .dark {
   background-color: rgb(63, 44, 156);
-  color: white;
+  color: rgb(253, 251, 255);
 }
 
 .regular {
-  background-color: rgb(54, 44, 196);
-  color: white;
+  background-color: rgb(85, 44, 196);
+  color: rgb(253, 251, 255);
 }
 
-.light {
-  background-color: rgb(218, 212, 255);
-  color: black;
-}
-
-.offwhite {
-  background-color: whitesmoke;
-  color: black;
+.color {
+  color: var(--color-text);
 }
 
 .white {
-  background-color: white;
-  color: black;
-}
-
-.borderless {
-  border: 0;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
 }
 
 .lowershadow {
@@ -50,15 +71,30 @@ code {
   position: relative;
 }
 
+.simplebutton {
+  border: 0;
+  text-align: center;
+  padding: 10px;
+}
+.simplebutton:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.portfoliobutton {
+  border: 0;
+}
+.portfoliobutton:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
 .sidebarbutton {
   min-width: 200px;
-  background-color: white;
   border: 0;
   text-align: start;
   margin-right: 50px;
 }
 .sidebarbutton:hover {
-  background-color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .closesidebarbutton {

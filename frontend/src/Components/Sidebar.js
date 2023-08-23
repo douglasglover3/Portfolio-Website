@@ -2,7 +2,7 @@ import {useNavigate} from "react-router-dom";
 import {useState} from "react";
 import {CaretRight, CaretLeft} from "phosphor-react"
 
-export default function Sidebar() {
+export default function Sidebar(setNightmode) {
     const [closed, setClosed] = useState(false);
     let navigate = useNavigate();
     if(closed)
@@ -12,33 +12,22 @@ export default function Sidebar() {
             </button>
         );
     else
-        return (
-            <div style={{height: "100%", position: "sticky", top: "0px"}}>
-                <div style={{display: "flex", flexDirection: "column", alignSelf:"center", padding:"60px", }}>
-                    <button className="closesidebarbutton" style={{left: "330px"}} onClick={() => {setClosed(true)}}>
-                        <CaretLeft size={20} weight="bold"/>
-                    </button>
-                    <button className="sidebarbutton" onClick={() => {navigate("/")}}>
-                        <h2>Home</h2>
-                    </button>
-                    <button className="sidebarbutton" onClick={() => {navigate("/about")}}>
-                        <h2>About</h2>
-                    </button>
-                    <button className="sidebarbutton" onClick={() => {navigate("/portfolio")}}>
-                        <h2>Project Portfolio</h2>
-                    </button>
-                    <div style={{ display: "flex", flexDirection: "column", height:"100%", marginInline:"10px"}}>
-                        <button className="sidebarbutton" onClick={() => {navigate("/portfolio/professional")}}>
-                            <h3>Professional</h3>
-                        </button>
-                        <button className="sidebarbutton" onClick={() => {navigate("/portfolio/college")}}>
-                            <h3>College</h3>
-                        </button>
-                        <button className="sidebarbutton" onClick={() => {navigate("/portfolio/other")}}>
-                            <h3>Other</h3>
-                        </button>
-                    </div>
-                </div>
+    return (
+        <div className="white" style={{height: "100vh", position: "sticky", top: "0px", display:"flex", flexDirection:"column", justifyContent:"space-between"}}>
+            <div style={{display: "flex", flexDirection: "column", alignSelf:"center", padding:"60px", }}>
+                <button className="closesidebarbutton" style={{left: "330px"}} onClick={() => {setClosed(true)}}>
+                    <CaretLeft size={20} weight="bold"/>
+                </button>
+                <button className="white sidebarbutton" onClick={() => {navigate("/")}}>
+                    <h2>Home</h2>
+                </button>
+                <button className="white sidebarbutton" onClick={() => {navigate("/about")}}>
+                    <h2>About</h2>
+                </button>
+                <button className="white sidebarbutton" onClick={() => {navigate("/portfolio")}}>
+                    <h2>Project Portfolio</h2>
+                </button>
             </div>
-        );
+        </div>
+    );
 }

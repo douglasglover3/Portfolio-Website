@@ -1,4 +1,4 @@
-export function Section ({ children, color }) {
+export default function Section ({ children, color }) {
 
     return (
         <div className={color} style={{display: "flex", minWidth: "100%"}}>

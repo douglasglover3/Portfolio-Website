@@ -1,5 +1,6 @@
 import Home from './Pages/Home'
 import Error from './Pages/Error';
+import Portfolio from './Pages/Portfolio';
 
 import Sidebar from './Components/Sidebar'
 
@@ -10,15 +11,15 @@ function App() {
   return (
     <StrictMode>
 		<Router>
-			<div style={{ display: "flex", height:"100%", maxWidth:"100%"}}>
+			<div style={{display: "flex"}}>
 				<Sidebar/>
 				<Routes>
 					<Route path="/" element={<Home/>}/>
 					<Route path="/about" element={<Error errorType="About page"/>}/>
-					<Route path="/portfolio" element={<Error errorType="Portfolio page"/>}/>
-					<Route path="/portfolio/professional" element={<Error errorType="Portfolio Professionalpage"/>}/>
-					<Route path="/portfolio/college" element={<Error errorType="Portfolio College page"/>}/>
-					<Route path="/portfolio/other" element={<Error errorType="Portfolio Other page"/>}/>
+					<Route path="/portfolio" element={<Portfolio/>}/>
+					<Route path="/portfolio/professional" element={<Portfolio/>}/>
+					<Route path="/portfolio/college" element={<Portfolio/>}/>
+					<Route path="/portfolio/other" element={<Portfolio/>}/>
 					<Route path="/error" element={<Error errorType="Something went wrong. Refresh the page or try again later."/>}/>
 					<Route path="*" element={<Navigate to='/error'/>}/>
 				</Routes>
