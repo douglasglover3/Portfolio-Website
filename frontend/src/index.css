@@ -8,6 +8,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --color-background: rgb(253, 251, 255);
+  --color-text-brighter: rgb(85, 44, 196);
   --color-text: rgb(47, 0, 158);
   --color-foreground: #0f0e11;
 }
@@ -48,13 +49,13 @@ code {
 }
 
 .dark {
-  background-color: rgb(63, 44, 156);
-  color: rgb(253, 251, 255);
+  background-color: var(--color-text);
+  color: var(--color-background);
 }
 
 .regular {
-  background-color: rgb(85, 44, 196);
-  color: rgb(253, 251, 255);
+  background-color: var(--color-text-brighter);
+  color: var(--color-background);
 }
 
 .color {
@@ -80,11 +81,37 @@ code {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
+.tagbutton {
+  background-color: var(--color-text-brighter);
+  border: 0;
+  text-align: center;
+  padding: 10px;
+  margin-right:"5px";
+  padding-inline: "10px";
+  padding-block: "5px";
+  border-radius: "15px";
+}
+.tagbutton:hover {
+  background-color:  var(--color-text);
+}
+
 .portfoliobutton {
   border: 0;
+  background-color: var(--color-background);
+  display: flex;
+  padding-inline: 20px;
+  text-align: left;
 }
 .portfoliobutton:hover {
   background-color: rgba(0, 0, 0, 0.05);
+}
+
+.description {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 1rem;
 }
 
 .sidebarbutton {
