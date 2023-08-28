@@ -2,13 +2,17 @@
     {
         "title": "Synesthize Sound to Color App",
         "tags": ["University", "Application", "Website"],
-        "description": "This app is an experimental interpretation of sound into color. The app takes the user's microphone input, then detects any musical notes being played to convert them into specific colors. This was made in my senior year at UCF with a team of five members.",
-        "imageName": "SynesthizeTitle.png"
+        "description": "This website and desktop app is an experimental interpretation of sound into color. The app takes the user's microphone input, then detects any musical notes being played to convert them into specific colors.",
+        "imageName": "SynesthizeTitle.png",
+        "imageAlt": "Synesthize Logo",
+        "projectName": "Synesthize"
     },
     {
         "title": "Soundlink Playlist Social Media App",
         "tags": ["University", "Application", "Mobile"],
-        "description": "This app is a social media mobile app focused on sharing playlists. Users can create, edit, share, like, and comment on posts. Users attach a playlist to posts that can be played on Spotify.There are also user profiles, email verified accounts, and a direct messaging system. There was additionally a companion website meant to advertise and provide a download for the mobile app. This was made in my junior year at UCF with a team of seven members.",
-        "imageName": "soundlinklogo.png"
+        "description": "This mobile app is a social media app focused on sharing playlists. Users can create, edit, share, like, and comment on posts. Users attach a playlist to posts that can be played on Spotify.",
+        "imageName": "soundlinklogo.png",
+        "imageAlt": "Soundlink Logo",
+        "projectName": "Soundlink"
     }
 ]

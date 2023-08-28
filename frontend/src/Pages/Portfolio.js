@@ -1,5 +1,3 @@
-
-import Section from '../Components/Section';
 import ProjectTile from '../Components/ProjectTile';
 import Projects from '../Projects/Projects.json';
 
@@ -12,7 +10,7 @@ export default function Portfolio() {
                 <h3>All projects</h3>
                 {/*Add filter stuff here*/}
             </div>
-            {tiles.map((tile) => <ProjectTile key={tile.title} title={tile.title} tags={tile.tags} description={tile.description} imageName={tile.imageName}/>)}
+            {tiles.map((tile) => <ProjectTile key={tile.projectName} projectName={tile.projectName} title={tile.title} tags={tile.tags} description={tile.description} imageName={tile.imageName} markdownName={tile.projectName + ".md"}/>)}
         </div>
     );
 }
