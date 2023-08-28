@@ -5,14 +5,22 @@
         "description": "This website and desktop app is an experimental interpretation of sound into color. The app takes the user's microphone input, then detects any musical notes being played to convert them into specific colors.",
         "imageName": "SynesthizeTitle.png",
         "imageAlt": "Synesthize Logo",
-        "projectName": "Synesthize"
+        "projectName": "Synesthize",
+        "githubUrl": "https://github.com/douglasglover3/Senior-Design-Project"
     },
     {
         "title": "Soundlink Playlist Social Media App",
-        "tags": ["University", "Application", "Mobile"],
+        "tags": ["University", "Application", "Mobile", "Frontend"],
         "description": "This mobile app is a social media app focused on sharing playlists. Users can create, edit, share, like, and comment on posts. Users attach a playlist to posts that can be played on Spotify.",
         "imageName": "soundlinklogo.png",
         "imageAlt": "Soundlink Logo",
         "projectName": "Soundlink"
+    },
+    {
+        "title": "College Event Website",
+        "tags": ["University", "Application", "Website", "Database"],
+        "description": "This website is for sharing and viewing upcoming events at local colleges. University and registered student organizations can announce events, and students can login to view and comment on these events.",
+        "projectName": "CollegeEventWebsite",
+        "githubUrl":"https://github.com/douglasglover3/College-Event-Website"
     }
 ]

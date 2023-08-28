@@ -1,31 +1,28 @@
-
-import { useState, useEffect } from 'react';
-import ReactMarkdown from 'react-markdown';
-
-
 import {useLocation} from "react-router-dom";
+import { lazy, Suspense } from 'react';
+import {ProjectButton} from "../Components/LinkButton";
 
-const images = require.context('../Images', true);
-const markdowns = require.context('../Projects', true);
+const images = require.context('../Projects/Images', true);
+
 
 export default function ProjectPage() {
-    const [content, setContent] = useState('');
     const project = useLocation().state;
-    console.log(project)
-
-    useEffect(() => {
-		fetch(markdowns(`./${project.markdownName}`))
-            .then(res => res.text())
-            .then(text => setContent(text))
-	})
+    const Content = lazy(() => import(`../Projects/${project.projectName}`));
 
     return (
         <div style={{width:"100%", marginInline: "100px", marginBlock: "60px"}}>
             
             <div style= {{display: "flex", flexDirection: "column", padding:"20px"}}>
+                {project.imageName ? 
+                    <img src={images(`./${project.imageName}`)} style={{maxWidth:"60%", maxHeight: "30%", alignSelf: "center", marginBlock: "60px"}} alt={project.imageAlt}/>
+                :
+                    <></>
+                }
+                <div style={{display: "flex", justifyContent: "space-between"}}>
+                    <h2>{project.title}</h2>
+                    {project.githubUrl != null ? <ProjectButton url={project.githubUrl}/> : <></>}
+                </div>
                 
-                <img src={images(`./${project.imageName}`)} style={{maxWidth:"60%", maxHeight: "30%", alignSelf: "center", marginBlock: "50px"}} alt={project.imageAlt}/>
-                <h2>{project.title}</h2>
                 <div style={{display:"flex", marginBottom: "25px"}}>
                     {project.tags.map((tag) => 
                         <button key={tag} className="tagbutton" style={{marginRight:"5px", paddingInline: "10px", paddingBlock: "5px", borderRadius: "15px"}} onClick={() => {/*Filter by tag*/}}>
@@ -35,7 +32,9 @@ export default function ProjectPage() {
                         </button>)
                     }
                 </div>
-                <ReactMarkdown children={content} />
+                <Suspense fallback={<div>Loading...</div>}>
+                    <Content />
+                </Suspense>
             </div>
         </div>
     );
