@@ -119,6 +119,7 @@ code {
   border: 0;
   text-align: start;
   margin-right: 50px;
+  padding-inline: 20px;
 }
 .sidebarbutton:hover {
   background-color: rgba(0, 0, 0, 0.05);

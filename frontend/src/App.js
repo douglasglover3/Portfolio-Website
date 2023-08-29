@@ -1,4 +1,5 @@
 import Home from './Pages/Home'
+import About from './Pages/About';
 import Error from './Pages/Error';
 import Portfolio from './Pages/Portfolio';
 import ProjectPage from './Pages/ProjectPage';
@@ -16,7 +17,7 @@ function App() {
 				<Sidebar/>
 				<Routes>
 					<Route path="/" element={<Home/>}/>
-					<Route path="/about" element={<Error errorType="About page"/>}/>
+					<Route path="/about" element={<About/>}/>
 					<Route path="/portfolio/*" element={<Portfolio/>}/>
 					<Route path="/projects/*" element={<ProjectPage/>}/>
 					<Route path="/error" element={<Error errorType="Something went wrong. Refresh the page or try again later."/>}/>
