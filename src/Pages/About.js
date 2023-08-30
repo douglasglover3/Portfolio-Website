@@ -5,7 +5,7 @@ export default function About() {
     return (
         <div style={{width:"100%", marginInline: "100px", marginBlock: "60px"}}>
             <div style= {{display: "flex", padding:"20px"}}>
-                <div>
+                <div style= {{padding:"20px"}}>
                     <h2>Hi, my name is Douglas Glover.</h2>
                     <p>
                         I am a software developer interested in frontend and full-stack development. I have been programming since high school when I created a flash game with my friends. I have always enjoyed
@@ -26,7 +26,7 @@ export default function About() {
                         <GithubButton/>
                     </div>
                 </div>
-                <img src={require("../Images/aboutphoto.jpg")} alt="Douglas Glover sitting in a forest." style={{maxHeight:"70vh"}}/>
+                <img src={require("../Images/aboutphoto.jpg")} alt="Douglas Glover sitting in a forest." style={{maxHeight:"50vh"}}/>
             </div>
            
         </div>
