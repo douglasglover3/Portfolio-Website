@@ -21,7 +21,7 @@ function App() {
 					<Route path="/portfolio/*" element={<Portfolio/>}/>
 					<Route path="/projects/*" element={<ProjectPage/>}/>
 					<Route path="/error" element={<Error errorType="Something went wrong. Refresh the page or try again later."/>}/>
-					<Route path="*" element={<Navigate to='/error'/>}/>
+					<Route path="*" element={<Navigate to='/'/>}/>
 				</Routes>
 			</div>
 		</Router>
