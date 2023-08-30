@@ -7,7 +7,7 @@ import ProjectPage from './Pages/ProjectPage';
 import Sidebar from './Components/Sidebar'
 
 import {StrictMode} from "react";
-import {BrowserRouter as Router, Routes, Route, Navigate} from "react-router-dom";
+import {HashRouter as Router, Routes, Route, Navigate} from "react-router-dom";
 
 function App() {
   return (
