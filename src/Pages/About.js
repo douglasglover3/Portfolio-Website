@@ -26,7 +26,7 @@ export default function About() {
                         <GithubButton/>
                     </div>
                 </div>
-                <img src={require("../Images/Portrait-Small.png")} alt="Photo of Douglas Glover" style={{maxHeight:"70vh"}}/>
+                <img src={require("../Images/aboutphoto.png")} alt="Douglas Glover sitting in a forest." style={{maxHeight:"70vh"}}/>
             </div>
            
         </div>
