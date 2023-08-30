@@ -14,11 +14,11 @@ export default function ProjectTile ({title, tags, description, imageName, image
                         <h2 style={{display:"flex", marginBottom: "10px"}}> {title} </h2>
                         <div style={{display:"flex", marginBottom: "25px"}}>
                             {tags.map((tag) => 
-                                <button key={tag} className="tagbutton" style={{marginRight:"5px", paddingInline: "10px", paddingBlock: "5px", borderRadius: "15px"}} onClick={(e) => {e.stopPropagation(); /*Filter by tag*/}}>
+                                <div key={tag} className="tagbutton" style={{marginRight:"5px", paddingInline: "10px", paddingBlock: "5px", borderRadius: "15px"}} onClick={(e) => {e.stopPropagation(); /*Filter by tag*/}}>
                                     <h5 style={{margin: "0px", color:"white", fontWeight:"normal"}}>
                                         {tag}
                                     </h5>
-                                </button>)
+                                </div>)
                             }
                         </div>
                         <p className="description">

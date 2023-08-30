@@ -82,7 +82,7 @@ code {
 }
 
 .tagbutton {
-  background-color: var(--color-text-brighter);
+  background-color: var(--color-text);
   border: 0;
   text-align: center;
   padding: 10px;
@@ -90,9 +90,6 @@ code {
   padding-inline: "10px";
   padding-block: "5px";
   border-radius: "15px";
-}
-.tagbutton:hover {
-  background-color:  var(--color-text);
 }
 
 .portfoliobutton {

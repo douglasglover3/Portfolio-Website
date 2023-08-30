@@ -1,2 +1,2 @@
-New projects go in src/Projects/Projects.json.
-Project images go in public/Images 
+
+Portfolio website for Douglas Glover. Contains an about page and descriptions for various web and desktop application projects.
