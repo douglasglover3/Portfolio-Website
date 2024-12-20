@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.cfb315e7.css",
-    "main.js": "/static/js/main.ded8044f.js",
+    "main.css": "/static/css/main.403a217c.css",
+    "main.js": "/static/js/main.0f8d2ae7.js",
     "static/js/642.de82ad54.chunk.js": "/static/js/642.de82ad54.chunk.js",
     "static/js/534.07efc207.chunk.js": "/static/js/534.07efc207.chunk.js",
     "static/js/356.a9d2d7ae.chunk.js": "/static/js/356.a9d2d7ae.chunk.js",
@@ -13,6 +13,7 @@
     "static/media/DemoNotifications.gif": "/static/media/DemoNotifications.4877547fd34553c103fd.gif",
     "static/media/DemoLogin.gif": "/static/media/DemoLogin.88f5aef74c32933da75a.gif",
     "static/media/Portrait-Small.png": "/static/media/Portrait-Small.06e2b27e3975dca8bc37.png",
+    "static/media/aboutphoto.jpg": "/static/media/aboutphoto.76633890d572779bc173.jpg",
     "static/media/RitualNightGameplay.jpg": "/static/media/RitualNightGameplay.9079fb53d3c4fddcface.jpg",
     "static/media/ProjectER.png": "/static/media/ProjectER.2c614965a431646539f8.png",
     "static/media/Event_list.png": "/static/media/Event_list.c1ed8274dc167894c066.png",
@@ -24,15 +25,15 @@
     "static/media/TransformData.png": "/static/media/TransformData.41cd76c39c73e1cd17ef.png",
     "static/media/soundlinklogo.png": "/static/media/soundlinklogo.29a6bd71c84963eac90c.png",
     "index.html": "/index.html",
-    "main.cfb315e7.css.map": "/static/css/main.cfb315e7.css.map",
-    "main.ded8044f.js.map": "/static/js/main.ded8044f.js.map",
+    "main.403a217c.css.map": "/static/css/main.403a217c.css.map",
+    "main.0f8d2ae7.js.map": "/static/js/main.0f8d2ae7.js.map",
     "642.de82ad54.chunk.js.map": "/static/js/642.de82ad54.chunk.js.map",
     "534.07efc207.chunk.js.map": "/static/js/534.07efc207.chunk.js.map",
     "356.a9d2d7ae.chunk.js.map": "/static/js/356.a9d2d7ae.chunk.js.map",
     "62.c2d00140.chunk.js.map": "/static/js/62.c2d00140.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cfb315e7.css",
-    "static/js/main.ded8044f.js"
+    "static/css/main.403a217c.css",
+    "static/js/main.0f8d2ae7.js"
   ]
 }
