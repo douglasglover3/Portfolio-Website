@@ -15,7 +15,7 @@ export default function ProjectTile ({title, tags, description, imageName, image
                         <div style={{display:"flex", marginBottom: "25px"}}>
                             {tags.map((tag) => 
                                 <div key={tag} className="tagbutton" style={{marginRight:"5px", paddingInline: "10px", paddingBlock: "5px", borderRadius: "15px"}} onClick={(e) => {e.stopPropagation(); /*Filter by tag*/}}>
-                                    <h5 style={{margin: "0px", color:"white", fontWeight:"normal"}}>
+                                    <h5 style={{margin: "0px", color:"white", fontWeight:"normal", whiteSpace:"nowrap"}}>
                                         {tag}
                                     </h5>
                                 </div>)

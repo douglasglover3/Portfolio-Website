@@ -14,7 +14,7 @@ function App() {
 		<Router>
 			<div style={{display: "flex"}}>
 				<Sidebar/>
-				<div style={{display: "flex", flexDirection: "column", maxWidth: "100%", alignContent: "center", marginInline: "7%"}}>
+				<div style={{display: "flex", flexDirection: "column", maxWidth: "100%", marginRight: "7vh"}}>
 					<Routes>
 						<Route path="/" element={<Home/>}/>
 						<Route path="/portfolio/*" element={<Portfolio/>}/>

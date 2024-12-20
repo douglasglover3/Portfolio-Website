@@ -113,10 +113,9 @@ code {
 }
 
 .sidebarbutton {
-  min-width: 200px;
+  min-width: 25vh;
   border: 0;
   text-align: start;
-  margin-right: 50px;
   padding-inline: 20px;
 }
 .sidebarbutton:hover {
