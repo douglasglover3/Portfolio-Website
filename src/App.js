@@ -1,5 +1,4 @@
 import Home from './Pages/Home'
-import About from './Pages/About';
 import Error from './Pages/Error';
 import Portfolio from './Pages/Portfolio';
 import ProjectPage from './Pages/ProjectPage';
@@ -15,14 +14,15 @@ function App() {
 		<Router>
 			<div style={{display: "flex"}}>
 				<Sidebar/>
-				<Routes>
-					<Route path="/" element={<Home/>}/>
-					<Route path="/about" element={<About/>}/>
-					<Route path="/portfolio/*" element={<Portfolio/>}/>
-					<Route path="/projects/*" element={<ProjectPage/>}/>
-					<Route path="/error" element={<Error errorType="Something went wrong. Refresh the page or try again later."/>}/>
-					<Route path="*" element={<Navigate to='/'/>}/>
-				</Routes>
+				<div style={{display: "flex", flexDirection: "column", maxWidth: "100%", alignContent: "center", marginInline: "7%"}}>
+					<Routes>
+						<Route path="/" element={<Home/>}/>
+						<Route path="/portfolio/*" element={<Portfolio/>}/>
+						<Route path="/projects/*" element={<ProjectPage/>}/>
+						<Route path="/error" element={<Error errorType="Something went wrong. Refresh the page or try again later."/>}/>
+						<Route path="*" element={<Navigate to='/'/>}/>
+					</Routes>
+				</div>
 			</div>
 		</Router>
 	</StrictMode>

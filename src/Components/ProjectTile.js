@@ -7,7 +7,7 @@ export default function ProjectTile ({title, tags, description, imageName, image
         <button className="portfoliobutton" onClick={() => {navigate( "/projects/" + projectName, {state: {title, tags, imageName, imageAlt, projectName, githubUrl}})}}>
             {imageName != null ?
                 <div style={{display:"flex"}}>
-                    <div style={{display:"flex", flexDirection: "column", margin: "5px", height: "300px", width: "400px", justifyContent:"center"}}>
+                    <div style={{display:"flex", flexDirection: "column", margin: "5px", height: "30vh", width: "40vh", justifyContent:"center"}}>
                         <img src={images(`./${imageName}`)} style={{maxWidth:"100%", maxHeight: "100%"}} alt="im"/>
                     </div>
                     <div style={{margin: "50px", width: "50%"}}>

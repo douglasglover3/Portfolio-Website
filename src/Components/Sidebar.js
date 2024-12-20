@@ -21,9 +21,6 @@ export default function Sidebar(setNightmode) {
                 <button className="white sidebarbutton" onClick={() => {navigate("/")}}>
                     <h2>Home</h2>
                 </button>
-                <button className="white sidebarbutton" onClick={() => {navigate("/about")}}>
-                    <h2>About</h2>
-                </button>
                 <button className="white sidebarbutton" onClick={() => {navigate("/portfolio")}}>
                     <h2>Project Portfolio</h2>
                 </button>

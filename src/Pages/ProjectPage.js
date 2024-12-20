@@ -1,6 +1,7 @@
 import {useLocation} from "react-router-dom";
 import { lazy, Suspense } from 'react';
 import {ProjectButton} from "../Components/LinkButton";
+import About from './About.js';
 
 const images = require.context('../Projects/Images', true);
 
@@ -10,7 +11,7 @@ export default function ProjectPage() {
     const Content = lazy(() => import(`../Projects/${project.projectName}`));
 
     return (
-        <div style={{width:"100%", marginInline: "100px", marginBlock: "60px"}}>
+        <div style={{maxWidth:"100%", marginInline: "100px", marginBlock: "60px"}}>
             
             <div style= {{display: "flex", flexDirection: "column", padding:"20px"}}>
                 {project.imageName ? 
@@ -19,7 +20,7 @@ export default function ProjectPage() {
                     <></>
                 }
                 <div style={{display: "flex", justifyContent: "space-between"}}>
-                    <h2>{project.title}</h2>
+                    <h1 style={{marginBlock: "10px"}}>{project.title}</h1>
                     {project.githubUrl != null ? <ProjectButton url={project.githubUrl}/> : <></>}
                 </div>
                 
@@ -36,6 +37,7 @@ export default function ProjectPage() {
                     <Content />
                 </Suspense>
             </div>
+            <About/>
         </div>
     );
 }

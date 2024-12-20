@@ -1,5 +1,13 @@
 [
     {
+        "title": "Ritual Night Database and API",
+        "tags": ["Work Contract", "API", "Database", "Python", "PostgreSQL", "Kubernetes"],
+        "description": "This database and API is used to provide data for players in the game 'Ritual Night'. The database stores information about players like the cosmetics they have unlocked, or the xp they have earned, and the API is used to provide that data to the client application.",
+        "imageName": "RitualNightTitle.jpg",
+        "imageAlt": "Ritual Night Title",
+        "projectName": "RitualNight"
+    },
+    {
         "title": "Synesthize Sound to Color App",
         "tags": ["University", "Application", "Website", "React", "Electron"],
         "description": "This website and desktop app is an experimental interpretation of sound into color. The app takes the user's microphone input, then detects any musical notes being played to convert them into specific colors.",
